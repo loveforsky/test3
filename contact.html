@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Information</title>
+<style>
+        html, body{
+            height: 100%;
+            margin: 0;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; 
+            overflow-x: hidden;
+            position:relative;
+        }
+        body::before{
+            content: "";
+            position: fixed;
+            inset: 0;
+            background-image: url('background.gif');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 0.3; 
+            z-index: -1;
+            pointer-events: none;
+        }
+        .headline {
+                background-color: #b3b2b2;
+                text-align:center;
+                padding: 40px;
+                font-family: "Berlin Sans SB", serif;
+        }
+        .headline h1{
+            font-size:48px;
+            margin-bottom:10px;
+        }
+        .content {
+            width:100%;
+            max-width: 1200px;
+            padding: 40px 20px;
+            font-size:large;
+            font-weight: bold;
+            line-height:1.6;
+            font-family: "Berlin Sans SB", serif;
+            flex: 1 1 auto;
+            margin-left:auto;
+            margin-right:auto;
+        }
+        .content p{
+             display: list-item;
+            list-style-type: disc;
+            list-style-position: inside;
+            margin-left: 1.2em;
+            line-height: 4.0;
+            
+        }
+        a:link{
+            color: #333;
+            text-decoration: none;
+        }
+        a:visited{
+            color: #333;
+             text-decoration: none;
+        }
+        a:hover,a:active{
+            color: #3c78e7;
+           
+        }
+        .footer{
+            background-color: #b3b2b2;
+            text-align:center;
+            padding: 20px;
+            font-family: "Berlin Sans SB", serif;
+        }
+    </style>    
+</head>
+<body>
+    <div class="headline">
+        <h1>Contact Information</h1>
+    </div>
+    <div class="content">
+        <p>Email: yao@example.com</p>
+        <p>Youtube: <a href="https://www.youtube.com/user/yao" target="_blank">https://www.youtube.com/user/yao</a></p>
+        <p>Phone: +86 123 4567 8900</p>
+        <p>Location: Beijing, China</p>    
+    </div>
+    
+    <div class="footer">
+        <p>&copy; 2026 Yao. All rights reserved.</p>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self Introduction</title>
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
+        html, body{
+            height: 100%;
+            margin: 0;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; 
+            overflow-x: hidden; 
+        }
+        body::before{
+            content: "";
+            position: fixed;
+            inset: 0;
+            background-image: url('background.gif');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 0.3; 
+            z-index: -1;
+            pointer-events: none;
+        }
+        .headline {
+                background-color: #b3b2b2;
+                text-align:center;
+                padding: 40px;
+                font-family: "Berlin Sans SB", serif;
+        }
+        .headline h1{
+            font-size:48px;
+            margin-bottom:10px;
+            text-align: center;
+        }
+        .content {
+            width:100%;
+            padding: 40px 20px;
+            font-size:large;
+            font-weight: bold;
+            line-height:1.6;
+            font-family: "Berlin Sans SB", serif;
+            flex: 1 1 auto;
+            margin-left:auto;
+            margin-right:auto;
+            margin-top: 40px;; 
+        }
+        .content p {
+            padding: 20px;
+        }
+
+        img{
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            float: left;
+            margin-right: 40px;
+        }
+        .footer{
+            background-color: #b3b2b2;
+            text-align:center;
+            padding:20px;
+            font-family: "Berlin Sans SB", serif;
+            font-size:20px;
+            flex: 0 0 auto;
+        }
+
+    </style>
+</head>
+<body>
+ <div class="headline">
+    <h1>My Self Introduction</h1>
+  </div> 
+    <div class="content">
+        <img src="./息屏.jpg" alt="profile picture">
+        <p>Hi there! My name is Yao, and I'm a computer science enthusiast with a zest for life's adventures. I have a deep passion for photography and traveling—I believe that capturing moments through a lens and exploring new places enriches my perspective and fuels my creativity.
+Currently, I'm honing my technical skills, especially in programming languages like C, Python, HTML, and CSS. I enjoy the logic of coding and the thrill of bringing ideas to life through software development. When I'm not immersed in lines of code, you'll likely find me planning my next trip or experimenting with photography techniques to capture the beauty of the world.
+I'm always eager to learn new things and embrace challenges that push me out of my comfort zone. Let's connect and share our stories!</p>
+    </div>
+  <div class="footer">
+    <p>&copy; 2026 Yao. All rights reserved.</p>      
+</body>
+</html>

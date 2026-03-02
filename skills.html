@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>skills and expertise</title>
+    <style>
+        html, body{
+            height: 100%;
+            margin: 0;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; 
+            overflow-x: hidden;
+            position:relative;
+        }
+        body::before{
+            content: "";
+            position: fixed;
+            inset: 0;
+            background-image: url('background.gif');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 0.3; 
+            z-index: -1;
+            pointer-events: none;
+        }
+        .headline {
+                background-color: #b3b2b2;
+                text-align:center;
+                padding: 40px;
+                font-family: "Berlin Sans SB", serif;
+        }
+        .headline h1{
+            font-size:48px;
+            margin-bottom:10px;
+        }
+        .content {
+            font-family: "Berlin Sans SB", serif;
+            margin:0 auto;
+            padding: 40px 20px;
+            flex: 1 1 auto;
+            font-size: large;
+            font-weight: bold;
+            line-height:1.6;
+        }
+        .footer{
+            background-color: #b3b2b2;
+            text-align:center;
+            padding:20px;
+            font-family: "Berlin Sans SB", serif;
+            font-size:20px;
+            flex: 0 0 auto;
+        }
+        </style>
+</head>
+<body>
+    <div class="headline">
+        <h1>Skills and Expertise</h1>
+    </div>
+    <div class="content">
+        <p>Here are some of my key skills and areas of expertise(全是编的):</p>
+        <ul>
+            <li><strong>Programming Languages:</strong> Proficient in Python, Java, and C++. Experienced with JavaScript and SQL.</li>
+            <li><strong>Web Development:</strong> Skilled in HTML, CSS, and React for building responsive and user-friendly websites.</li>
+            <li><strong>Data Analysis:</strong> Experienced in using tools like Pandas, NumPy, and Matplotlib for data manipulation and visualization.</li>
+            <li><strong>Machine Learning:</strong> Familiar with scikit-learn, TensorFlow, and Keras for developing machine learning models.</li>
+            <li><strong>Version Control:</strong> Proficient in Git for code management and collaboration.</li>
+        </ul>
+    </div>
+    <div class="footer">
+        <p>&copy; 2026 Yao. All rights reserved.</p> 
+    </div>
+    
+</body>
+</html>

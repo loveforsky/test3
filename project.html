@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <style>
+        html, body{
+            height: 100%;
+            margin: 0;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; 
+            overflow-x: hidden;
+        }
+        body::before{
+            content: "";
+            position: fixed;
+            inset: 0;
+            background-image: url('background.gif');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 0.3; 
+            z-index: -1;
+            pointer-events: none;
+        }
+        .headline {
+                background-color: #b3b2b2;
+                text-align:center;
+                padding: 40px;
+                font-family: "Berlin Sans SB", serif;
+        }
+        .headline h1{
+            font-size:48px;
+            margin-bottom:10px;
+        }
+        .content {
+            position: relative;
+            width:100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            font-size:large;
+            font-weight: bold;
+            line-height:1.6;
+            font-family: "Berlin Sans SB", serif;
+            flex: 1 1 auto;
+        }
+        .content p, .content h3 {
+            margin: 10px;
+        }
+        #p1, #p2, #p3, #p4{
+            width: 300px;
+            background-color: #d2d1d1;
+            border: 1px solid #333;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            float: left;           
+            margin-left: 50px;
+        }
+        .box-group {
+            
+            position: absolute;
+            left: 0;
+            right: 0;
+            top:0;
+            bottom:0;
+            margin:auto;
+
+           
+        }
+
+        .footer{
+            background-color: #b3b2b2;
+            text-align:center;
+            padding:20px;
+            font-family: "Berlin Sans SB", serif;
+            font-size:20px;
+            flex: 0 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="headline">
+      <h1>My Projects</h1>
+    </div>
+    <div class="content">
+        <div class="box-group">
+            <div id="p1">
+            <h3>Project 1</h3>
+            <p>This is the first project in my portfolio.</p>
+            </div>
+            <div id="p2">
+            <h3>Project 2</h3>
+            <p>This is the second project in my portfolio.</p>
+            </div>
+            <div id="p3">
+            <h3>Project 3</h3>
+            <p>This is the third project in my portfolio.</p>
+            </div>
+            <div id="p4">
+            <h3>Project 4</h3>  
+            <p>This is the fourth project in my portfolio.</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2026 Yao. All rights reserved.</p>
+    </div>
+
+    
+</body>
+</html>
