@@ -48,6 +48,7 @@
             line-height:1.6;
             font-family: "Berlin Sans SB", serif;
             flex: 1 1 auto;
+            box-sizing: border-box;
         }
         .content p, .content h3 {
             margin: 10px;
@@ -60,6 +61,14 @@
             margin-bottom: 20px;
             float: left;           
             margin-left: 50px;
+            box-sizing: border-box;
+        }
+        @media (max-width: 768px) {
+            #p1, #p2, #p3, #p4 {
+                width: 100%;
+                margin-left: 0;
+                float: none;
+            }
         }
         .box-group {
             
@@ -113,4 +122,5 @@
 
     
 </body>
+
 </html>
